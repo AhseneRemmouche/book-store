@@ -1,12 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	theme: {
+		extend: {
+			colors: {
+				primary: "#FFCE1A",
+				secondary: "#0D0842",
+				background: "#F3F3F3",
+				text: "#333333",
+				favorite: "#FF5841",
+			},
 
+			fontFamily: {
+				primary: ["Montserrat", "sans-serif"],
+				secondary: ["Nunito Sans", "sans-serif"],
+				mono: ["Fira Code", "monospace"],
+			},
+		},
+	},
+	plugins: [],
+};
