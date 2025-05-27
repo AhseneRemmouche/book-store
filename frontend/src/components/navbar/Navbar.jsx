@@ -11,8 +11,8 @@ function Navbar() {
 					<Link to="/" className="size-6">
 						<RiMenu2Fill />
 					</Link>
-					<div>
-						<IoSearchOutline />
+					<div className="relative">
+						<IoSearchOutline className="absolute left-2 top-1/2 -translate-y-1/2" />
 						<input
 							type="text"
 							placeholder="Search"
